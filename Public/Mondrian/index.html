@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display:flex;
+      height: 100vh;
+      justify-content: center;
+      align-items:center;
+    }
+    .tableau {
+      height: 748px;
+      width: 748px;
+      display:grid;
+      grid-template-rows:414px 132px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap:9px;
+      background-color: black;
+
+      .blanc {
+        background-color:#F0F1EC ;
+      }
+      .rouge {
+        background-color:#E72F24 ;
+      }
+      .gris {
+        background-color:#232629 ;
+      }
+      .bleu {
+        background-color:#004592 ;
+        border-bottom:10px solid black;
+      }
+      .jaune {
+        background-color:#F9D01E;
+      }
+    }
+    .hd{
+      grid-area: 1/2/1/5;
+    }
+    .mg{ 
+      grid-area:2 / 1 / 4 / 2;
+    }
+    .m{
+      grid-column-start: 2;
+      grid-column-end:4;
+      grid-row-start: 2;
+      grid-row-end:4
+    }
+    .jaune{
+      grid-area:-1/3/-2/2
+    }
+
+    .gris{
+      order:1
+    }
+    .bd{
+      grid-area:3/-2/-1/-1
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tableau">
+    <div class="rouge"></div>
+    <div class="hd blanc"></div>
+    <div class="mg blanc"></div>
+    <div class="m blanc"></div>
+    <div class="bleu"></div>
+    <div class="b blanc"></div>
+    <div class="jaune"></div>
+    <div class="gris"></div>
+    <div class="bd blanc"></div>
+  </div>
+</body>
+
+</html>
