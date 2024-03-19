@@ -5,7 +5,7 @@ function playSound(name) {
     son.play(); 
 };
 function gameOver() {
-    $("h1").text("Game Over au niveau " + (level-1) + ", appuyer sur une touche pour recommencer") ;
+    $("h1").text("Game Over au niveau " + (level-1) + ", double-clic pour recommencer") ;
     started = false ;
     playSound("wrong");
     gamePattern = [];
@@ -49,7 +49,7 @@ function nextSequence(){ //choisit une couleur l'ajoute et la joue augmente le n
 
 
 var started = false ;
-$(document).on("keypress", function(){ // fait une première séquence utilisateur
+$(document).on("dblclick", function(){ // fait une première séquence utilisateur
     if (gamePattern.length < 1 ) {
         nextSequence();
         started = true;
