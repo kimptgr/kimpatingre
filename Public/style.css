@@ -186,8 +186,6 @@ div.site2 {
 @media (max-width: 768px) { 
     div.site {
         flex-direction: column ;
-        align-content: flex-end;
-        padding-left: 0px;
 
     }
     div.site a {
@@ -196,8 +194,7 @@ div.site2 {
     }
 
     div.site p{
-        text-align: left ;
-        margin-left: 30px ;
+        text-align: center
     }
 
     .site1, .site2 {
