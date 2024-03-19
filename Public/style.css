@@ -11,12 +11,23 @@ section {
     height: auto;
     text-align: center;
     overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+#titre{
+    margin-top: 0px;
+}
+
+#footer {
+    margin-bottom: 0px;
+}
+
 p {
     font-family: dosis, sans-serif;
     font-size: 2rem ;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 20px ;
+    padding-right: 20px ;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
@@ -27,6 +38,7 @@ h2, h3 {
     font-family: gudea, sans-serif ;
     font-size: 2.5rem;
     color: #d2d8c0;
+    margin-top: 0px;
 }
 
 h3 {
@@ -38,8 +50,7 @@ h3 {
 h1 {
     font-family: gudea, sans-serif ;
     font-size: 4rem;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 #titre, #footer {
@@ -102,6 +113,9 @@ h1 {
     margin-bottom: 40px ;
 }
 
+#passion {
+    padding-bottom: 50px;
+}
 
 .carousel {
     position: relative;
@@ -110,12 +124,15 @@ h1 {
     overflow: hidden;
     text-align: center;
     font-size: 1.5rem ;
-    margin-bottom: 20px ;
+}
+
+img.carousel {
+    width: 100% ;
 }
 
 .prev, .next {
     position: absolute;
-    bottom: 50%;
+    top: 50%; 
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -168,8 +185,10 @@ div.site2 {
 
 @media (max-width: 768px) { 
     div.site {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column ;
+        align-content: flex-end;
+        padding-left: 0px;
+
     }
     div.site a {
         max-width: 100%;
@@ -177,11 +196,12 @@ div.site2 {
     }
 
     div.site p{
-        text-align: center;
+        text-align: left ;
+        margin-left: 30px ;
     }
 
     .site1, .site2 {
-        padding-top: 0 px; 
+        padding-top: 0 px;
     }
 } 
 
