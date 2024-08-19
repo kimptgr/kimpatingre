@@ -26,3 +26,7 @@ document.querySelector(".prev").addEventListener("click", () => { appuieBouton("
 });
 document.querySelector(".next").addEventListener("click", () => { appuieBouton("suivant")  
 });
+
+//FOOTER ANNEE DYNAMIQUE
+let currentYear = new Date().getFullYear();
+document.querySelector("footer p").textContent = `${currentYear}, Kim Patingre`;
