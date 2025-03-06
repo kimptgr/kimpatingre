@@ -191,6 +191,7 @@ img.carousel {
   flex-direction: column-reverse;
 }
 
+/* Mes projets */
 .site {
   display: flex;
   flex-wrap: wrap;
