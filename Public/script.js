@@ -65,13 +65,13 @@ imageRevisionD2WM.addEventListener("mouseleave", (e) =>
 );
 
 //hover ovs
-let imageOvs = document.querySelector("#imageOvs");
+/* let imageOvs = document.querySelector("#imageOvs");
 imageOvs.addEventListener("mouseenter", (e) =>
   changeSourceImage(e, "./assets/image/ovsNewTrip.png")
 );
 imageOvs.addEventListener("mouseleave", (e) =>
   changeSourceImage(e, "./assets/image/ovsIndex.png")
-);
+);*/
 
 function changeSourceImage(e, chemin) {
   e.target.setAttribute("src", chemin);
