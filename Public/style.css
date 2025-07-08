@@ -203,8 +203,8 @@ div.site a {
 }
 
 div.site img {
-  max-width: 90%;
-  object-fit: cover;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 div.site p {
