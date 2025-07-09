@@ -4,8 +4,8 @@ carousel = [
   "./assets/image/servonsupcarousel.jpg",
 ];
 carouseltexte = [
-  "<em>Je passe une grande partie de mon temps libre à créer : je couds, je tricote...</em>",
-  "<em>J'aime beaucoup bouger. En ce moment, je fais de l'escalade de bloc & de la musculation à la maison.</em>",
+  "<em>J'aime aussi créer : je couds, je tricote...</em>",
+  "<em>Quand je ne suis pas derrière l'ordinateur j'aime bouger. Je fais de l'escalade de voie en club et du bloc.</em>",
   "<em>Membre du bureau de l'association Servon sur un plateau, je joue à des jeux de société mais aussi de rôle.</em>",
 ];
 carouselalt = [
@@ -65,13 +65,31 @@ imageRevisionD2WM.addEventListener("mouseleave", (e) =>
 );
 
 //hover ovs
-/* let imageOvs = document.querySelector("#imageOvs");
+let imageOvs = document.querySelector("#imageOvs");
 imageOvs.addEventListener("mouseenter", (e) =>
   changeSourceImage(e, "./assets/image/ovsNewTrip.png")
 );
 imageOvs.addEventListener("mouseleave", (e) =>
   changeSourceImage(e, "./assets/image/ovsIndex.png")
-);*/
+);
+
+//hover encheres
+let imageEnchere = document.querySelector("#imageEnchere");
+imageEnchere.addEventListener("mouseenter", (e) =>
+  changeSourceImage(e, "./assets/image/encheresProfil.png")
+);
+imageEnchere.addEventListener("mouseleave", (e) =>
+  changeSourceImage(e, "./assets/image/encheresIndex.png")
+);
+
+//hover learn the mouse
+let imageLearnTheMouse = document.querySelector("#imageltm");
+imageLearnTheMouse.addEventListener("mouseenter", (e) =>
+  changeSourceImage(e, "./assets/image/ltmEx1.png")
+);
+imageLearnTheMouse.addEventListener("mouseleave", (e) =>
+  changeSourceImage(e, "./assets/image/ltmExmix.png")
+);
 
 function changeSourceImage(e, chemin) {
   e.target.setAttribute("src", chemin);
