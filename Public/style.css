@@ -186,16 +186,17 @@ img.carousel {
   right: 0;
 }
 
+/* Mes projets */
+
 .myProjects {
   display: flex;
   flex-direction: column-reverse;
 }
 
-/* Mes projets */
 .site {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 div.site a {
   flex: 1;
@@ -208,17 +209,21 @@ div.site img {
 }
 
 div.site p {
-  max-width: 60%;
+  max-width: 95%;
   flex: 1;
   padding: 0;
+  font-size: 1.5rem;
+  align-content: center;
 }
 
 div.site1 p {
   text-align: right;
+  padding-right: 16px;
 }
 
 div.site2 p {
   text-align: left;
+  padding-left: 16px;
 }
 
 div.site2 {
@@ -254,7 +259,4 @@ div.site2 {
   margin-top: 20px;
   clear: both;
   margin-left: 0px;
-}
-
-#footer {
 }
